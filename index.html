@@ -40,14 +40,18 @@
 			'transparent': true
 		}).addTo(map);
 		let orion = L.marker([51.98514, 5.66647]).addTo(map);
+		let popup_orion = "Orion a building from the Wageningen Campus, named after the constellation";
+		orion.bindPopup(popup_orion);
 		let forum = L.marker([51.98531, 5.66361]).addTo(map);
-		let popup = "Forum is a building from the Wageningen Campus, built in 2012";
-		forum.bindPopup(popup);
+		let popup_forum = "Forum is a building from the Wageningen Campus, built in 2012";
+		forum.bindPopup(popup_forum);
 		let circle = L.circle([52.3742819, 4.6280902], 50, {
 			color: 'blue',
 			fillColor: '#0000ff',
 			fillOpacity: 0.25
 		}).addTo(map);
+		let popup_home = "This is my hometown"
+		circle.bindPopup(popup_home);
 		
 		</script>
 	</body>
